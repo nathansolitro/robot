@@ -18,6 +18,6 @@ class Robot(MagicRobot):
 
     def teleop_periodic(self):
         self.drivetrain.drive(
-            self.controller.get_left_y(),
-            self.controller.get_right_x()
+            -self.controller.get_left_y(),
+            -self.controller.get_right_x()
         )

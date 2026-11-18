@@ -57,3 +57,4 @@ class Drivetrain(MagicComponent):
         pose = self.drivetrain_io.get_pose()
         if pose is not None:
             self._field.set_robot_pose(pose)
+            telemetry.log("Field", self._field)

@@ -1,15 +1,14 @@
 {
+  "DS": {"window": {"visible": false}},
+  "Display": {"window": {"visible": false}},
+  "dashboardOpModes": true,
   "keyboardJoysticks": [{
-    "axisConfig": [{
-      "decKey": 546,
-      "incKey": 549
-    }, {
+    "axisConfig": [{}, {
       "decKey": 568,
       "incKey": 564
     }, {
-      "decKey": 550,
-      "decayRate": 0,
-      "incKey": 563,
+      "decKey": 546,
+      "incKey": 549,
       "keyRate": 0.01
     }],
     "axisCount": 3,
@@ -55,5 +54,6 @@
     "buttonCount": 0,
     "povCount": 0
   }],
-  "robotJoysticks": [{"guid": "0300fa675e040000ff02000000007801"}]
+  "robotJoysticks": [{"guid": "0300c5376d04000019c2000000000000"}],
+  "useEstopHotkey": true
 }
