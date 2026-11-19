@@ -1,0 +1,18 @@
+{
+  "Alerts": {"visible": true},
+  "HALProvider": {"Other Devices": {"window": {"visible": false}}},
+  "NTProvider": {
+    "types": {
+      "\/DriverStation": "DriverStation",
+      "\/Telemetry\/Field": "Field2d",
+      "\/Tunables\/Autonomous Mode": "Selectable"
+    },
+    "windows": {"\/Telemetry\/Field": {"window": {"visible": true}}}
+  },
+  "NetworkTables": {
+    "Persistent Values": {"open": false},
+    "Retained Values": {"open": false}
+  },
+  "NetworkTables Info": {"Connections": {"open": true}},
+  "NetworkTables View": {"visible": false}
+}

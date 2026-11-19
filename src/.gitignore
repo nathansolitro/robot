@@ -22,7 +22,8 @@
 .AppleDouble
 .LSOverride
 
-# Icon must end with two 
+# Icon must end with two 
+
 Icon
 
 # Thumbnails
@@ -75,8 +76,6 @@ out/
 
 # Simulation GUI and other tools window save file
 networktables.json
-simgui.json
-*-window.json
 
 # Simulation data log directory
 logs/

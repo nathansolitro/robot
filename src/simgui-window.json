@@ -1,0 +1,100 @@
+{
+  "Docking": {"Data": []},
+  "MainWindow": {"GLOBAL": {
+    "font": "Droid Sans",
+    "fps": "120",
+    "height": "1019",
+    "maximized": "0",
+    "style": "1",
+    "userScaling": "100",
+    "width": "1646",
+    "xpos": "374",
+    "ypos": "145"
+  }},
+  "Table": {
+    "0x34AF80B8,2": {
+      "Column 0  Weight": "1.0000",
+      "Column 1  Width": "62",
+      "RefScale": "20"
+    },
+    "0x48040D35,4": {
+      "Column 0  Weight": "1.0000",
+      "Column 1  Weight": "1.0000",
+      "Column 2  Weight": "1.0000",
+      "Column 3  Weight": "1.0000"
+    },
+    "0xED901DC8,2": {"RefScale": "20"}
+  },
+  "Window": {
+    "\/DriverStation": {
+      "Collapsed": "0",
+      "Pos": "1190,290",
+      "Size": "239,234"
+    },
+    "\/Telemetry\/Field": {
+      "Collapsed": "0",
+      "Pos": "-2,36",
+      "Size": "1190,662"
+    },
+    "Alerts": {
+      "Collapsed": "0",
+      "Pos": "1192,36",
+      "Size": "451,450"
+    },
+    "DS": {
+      "Collapsed": "0",
+      "Pos": "1191,528",
+      "Size": "239,261"
+    },
+    "Debug##Default": {
+      "Collapsed": "0",
+      "Pos": "60,60",
+      "Size": "400,400"
+    },
+    "Display": {
+      "Collapsed": "0",
+      "Pos": "791,43",
+      "Size": "650,320"
+    },
+    "Joysticks": {
+      "Collapsed": "0",
+      "Pos": "405,703",
+      "Size": "1224,245"
+    },
+    "Keyboard 0 Settings": {
+      "Collapsed": "0",
+      "Pos": "526,323",
+      "Size": "300,560"
+    },
+    "NetworkTables": {
+      "Collapsed": "0",
+      "Pos": "1043,31",
+      "Size": "603,423"
+    },
+    "NetworkTables Info": {
+      "Collapsed": "0",
+      "Pos": "877,834",
+      "Size": "750,145"
+    },
+    "Other Devices": {
+      "Collapsed": "0",
+      "Pos": "1514,69",
+      "Size": "250,695"
+    },
+    "Robot State": {
+      "Collapsed": "0",
+      "Pos": "6,701",
+      "Size": "143,215"
+    },
+    "System Joysticks": {
+      "Collapsed": "0",
+      "Pos": "157,703",
+      "Size": "236,342"
+    },
+    "Timing": {
+      "Collapsed": "0",
+      "Pos": "1216,493",
+      "Size": "389,202"
+    }
+  }
+}

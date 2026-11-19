@@ -10,6 +10,9 @@ class Intake(MagicComponent):
 
     _percent = will_reset_to(0.0)
 
+    def setup(self):
+        telemetry.log("Intake Voltage", self.intake_io.get_voltage())
+
     def set_percent(self, percent: float) -> None:
         self._percent = percent
 
