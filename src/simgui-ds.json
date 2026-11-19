@@ -8,8 +8,7 @@
       "incKey": 564
     }, {
       "decKey": 546,
-      "incKey": 549,
-      "keyRate": 0.01
+      "incKey": 549
     }],
     "axisCount": 3,
     "buttonCount": 4,
@@ -54,6 +53,6 @@
     "buttonCount": 0,
     "povCount": 0
   }],
-  "robotJoysticks": [{"guid": "0300c5376d04000019c2000000000000"}],
+  "robotJoysticks": [{"guid": "0300fa675e040000ff02000000007801"}],
   "useEstopHotkey": true
 }

@@ -5,17 +5,11 @@ from wpilib.simulation import DifferentialDrivetrainSim
 from phoenix6.hardware import TalonFX
 from phoenix6.canbus import CANBus
 
-from wpimath import Pose2d, DifferentialDriveWheelPositions, DCMotor
+from wpimath import Pose2d, DCMotor
 
+from components.drivetrain.constants import DrivetrainConstants as const
 
-TRACK_WIDTH = 0.6   # meters
 DC_MOTOR = DCMotor.cim(1)
-MOI = 1.0   # moment of inertia
-MASS = 50   # kg
-WHEEL_RADIUS = 0.06 # meters
-GEAR_RATIO = 3.0
-CLOCK_SPEED = 0.02
-
 
 class DrivetrainIOBase(ABC):
     @abstractmethod
@@ -56,11 +50,11 @@ class SimDrivetrainIO(DrivetrainIOBase):
     def __init__(self) -> None:
         self._diff_drive = DifferentialDrivetrainSim(
             drive_motor=DC_MOTOR, 
-            gearing=GEAR_RATIO,
-            trackwidth=TRACK_WIDTH, 
-            j=MOI, 
-            mass=MASS,
-            wheel_radius=WHEEL_RADIUS
+            gearing=const.GEAR_RATIO,
+            trackwidth=const.TRACK_WIDTH, 
+            j=const.MOI, 
+            mass=const.MASS,
+            wheel_radius=const.WHEEL_RADIUS
         )
         self._left_voltage = 0
         self._right_voltage = 0
@@ -79,4 +73,4 @@ class SimDrivetrainIO(DrivetrainIOBase):
             self._left_voltage,
             self._right_voltage
         )
-        self._diff_drive.update(CLOCK_SPEED)
+        self._diff_drive.update(const.CLOCK_SPEED)

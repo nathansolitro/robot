@@ -3,15 +3,8 @@ from magicbot.magiccomponent import MagicComponent
 from wpilib import RobotController, DifferentialDrive, Field2d
 import telemetry
 from lemonlib.smart.profile import SmartProfile
-from phoenix6.hardware import TalonFX
-from phoenix6.canbus import CANBus
 
 from components.drivetrain.io import DrivetrainIOBase
-
-
-MAX_FORWARD_SPEED = 4.2  # m/s
-MAX_ROTATION_SPEED = 8.0  # rad/s
-TRACK_WIDTH = 0.6  # m
 
 class Drivetrain(MagicComponent):
     drivetrain_io: DrivetrainIOBase
@@ -37,7 +30,7 @@ class Drivetrain(MagicComponent):
     forward_percent = will_reset_to(0.0)
     angular_percent = will_reset_to(0.0)
 
-    def setup(self):
+    def setup(self) -> None:
         self._field = Field2d()
         telemetry.log("Field", self._field)
 
@@ -45,13 +38,13 @@ class Drivetrain(MagicComponent):
         self.forward_percent = forward_percent
         self.angular_percent = angular_percent
 
-    def execute(self):
+    def execute(self) -> None:
         velocities = DifferentialDrive.arcade_drive_ik(
-            self.forward_percent * MAX_FORWARD_SPEED,
-            self.angular_percent * MAX_ROTATION_SPEED
+            self.forward_percent,
+            self.angular_percent
         )
-        self.drivetrain_io.set_left_voltage(velocities.left / MAX_FORWARD_SPEED * RobotController.get_battery_voltage())
-        self.drivetrain_io.set_right_voltage(velocities.right / MAX_FORWARD_SPEED * RobotController.get_battery_voltage())
+        self.drivetrain_io.set_left_voltage(velocities.left * RobotController.get_battery_voltage())
+        self.drivetrain_io.set_right_voltage(velocities.right * RobotController.get_battery_voltage())
         self.drivetrain_io.update()
 
         pose = self.drivetrain_io.get_pose()
