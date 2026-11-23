@@ -3,13 +3,13 @@
   "MainWindow": {"GLOBAL": {
     "font": "Droid Sans",
     "fps": "120",
-    "height": "1019",
+    "height": "981",
     "maximized": "0",
     "style": "1",
     "userScaling": "100",
-    "width": "1646",
-    "xpos": "374",
-    "ypos": "145"
+    "width": "958",
+    "xpos": "961",
+    "ypos": "38"
   }},
   "Table": {
     "0x34AF80B8,2": {
@@ -59,7 +59,7 @@
     "Joysticks": {
       "Collapsed": "0",
       "Pos": "405,703",
-      "Size": "1224,245"
+      "Size": "796,201"
     },
     "Keyboard 0 Settings": {
       "Collapsed": "0",
@@ -84,17 +84,17 @@
     "Robot State": {
       "Collapsed": "0",
       "Pos": "6,701",
-      "Size": "143,215"
+      "Size": "88,138"
     },
     "System Joysticks": {
       "Collapsed": "0",
       "Pos": "157,703",
-      "Size": "236,342"
+      "Size": "154,218"
     },
     "Timing": {
       "Collapsed": "0",
-      "Pos": "1216,493",
-      "Size": "389,202"
+      "Pos": "939,493",
+      "Size": "233,120"
     }
   }
 }

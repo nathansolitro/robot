@@ -5,6 +5,7 @@ from phoenix6.canbus import CANBus
 
 from components.intake.constants import IntakeConstants as const
 
+
 class IntakeIOBase(ABC):
     @abstractmethod
     def set_voltage(self, voltage: float) -> None:

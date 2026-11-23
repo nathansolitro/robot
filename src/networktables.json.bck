@@ -2,7 +2,7 @@
   {
     "name": "\/Preferences\/Left Controller_kP",
     "type": "double",
-    "value": 1,
+    "value": 0,
     "properties": {"persistent": true}
   },
   {
@@ -14,13 +14,13 @@
   {
     "name": "\/Preferences\/Left Controller_kD",
     "type": "double",
-    "value": 1,
+    "value": 4,
     "properties": {"persistent": true}
   },
   {
     "name": "\/Preferences\/Right Controller_kP",
     "type": "double",
-    "value": 1,
+    "value": 0,
     "properties": {"persistent": true}
   },
   {
@@ -32,7 +32,7 @@
   {
     "name": "\/Preferences\/Right Controller_kD",
     "type": "double",
-    "value": 1,
+    "value": 4,
     "properties": {"persistent": true}
   }
 ]

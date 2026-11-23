@@ -5,3 +5,5 @@ class DrivetrainConstants():
     WHEEL_RADIUS = 0.06 # meters
     GEAR_RATIO = 8.0
     CLOCK_SPEED = 0.02  # OVERCLOCK
+    MAX_TURN_VELOCITY = 8.0 # rads/s
+    MAX_FORWARD_VELOCITY = 4.2  # meters
