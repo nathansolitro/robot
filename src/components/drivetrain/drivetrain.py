@@ -1,13 +1,13 @@
 from magicbot import will_reset_to
 from magicbot.magiccomponent import MagicComponent
-from wpilib import RobotController, Field2d
+from wpilib import Field2d, RobotController
 from wpimath import DifferentialDriveKinematics, ChassisVelocities
 
 
 import telemetry
 from lemonlib.smart.profile import SmartProfile
 
-from components.drivetrain.io import DrivetrainIOBase
+from components.drivetrain.io.base_io import DrivetrainIOBase
 
 from components.drivetrain.constants import DrivetrainConstants as const
 
@@ -57,14 +57,14 @@ class Drivetrain(MagicComponent):
         )
         velocities = self._kinematics.to_wheel_velocities(chassis)
 
-        left_velocity = self.left_pid.calculate(velocities.left)
+        left_voltage = self.left_pid.calculate(velocities.left / const.MAX_FORWARD_VELOCITY * RobotController.get_battery_voltage())
         self.left_pid.set_setpoint(velocities.left)
 
-        right_velocity = self.right_pid.calculate(velocities.right)
+        right_voltage = self.right_pid.calculate(velocities.right / const.MAX_FORWARD_VELOCITY * RobotController.get_battery_voltage())
         self.right_pid.set_setpoint(velocities.right)
 
-        self.drivetrain_io.set_left_voltage(left_velocity)
-        self.drivetrain_io.set_right_voltage(right_velocity)
+        self.drivetrain_io.set_left_voltage(left_voltage)
+        self.drivetrain_io.set_right_voltage(right_voltage)
         self.drivetrain_io.update()
 
         pose = self.drivetrain_io.get_pose()

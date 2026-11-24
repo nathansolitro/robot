@@ -59,7 +59,7 @@
     "Joysticks": {
       "Collapsed": "0",
       "Pos": "405,703",
-      "Size": "796,201"
+      "Size": "90,19"
     },
     "Keyboard 0 Settings": {
       "Collapsed": "0",
@@ -84,17 +84,17 @@
     "Robot State": {
       "Collapsed": "0",
       "Pos": "6,701",
-      "Size": "88,138"
+      "Size": "88,19"
     },
     "System Joysticks": {
       "Collapsed": "0",
       "Pos": "157,703",
-      "Size": "154,218"
+      "Size": "129,19"
     },
     "Timing": {
       "Collapsed": "0",
       "Pos": "939,493",
-      "Size": "233,120"
+      "Size": "81,19"
     }
   }
 }

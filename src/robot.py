@@ -27,8 +27,8 @@ class Robot(MagicRobot):
 
     def teleop_periodic(self):
         self.drivetrain.drive(
-            -self.controller.get_left_y(),
-            -self.controller.get_right_x()
+            self.controller.get_left_y(),
+            self.controller.get_right_x()
         )
         if self.controller.get_b_button() and not self.controller.get_a_button():
             self.intake.set_percent(-1.0)
